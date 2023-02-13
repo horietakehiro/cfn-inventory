@@ -1,0 +1,26 @@
+RootConfig:
+  Credential:
+    ProfileName: test-profile
+  # Filters:
+  #   Regions:
+  #     - "*"
+  #   StackTags:
+  #     - Key: System
+  #       Value: test-system
+  #   StackNamePrefix: test-system-
+
+ConfigByAccounts:
+  - Name: main-account
+    # Id: 123456789012
+  - 
+    # Name: sub-account
+    Id: 210987654321
+    Credential:
+      ProfileName: sub-profile
+    Filters:
+      Regions:
+        - ap-northeast-1
+      StackTags:
+        - Key: System
+          Value: sub-system
+      StackNamePrefix: sub-system-
